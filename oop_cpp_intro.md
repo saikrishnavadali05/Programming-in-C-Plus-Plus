@@ -5,22 +5,20 @@ Source : https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/#mp
 
 TABLE OF CONTENTS:
 
-Introduction
-Class
-Objects
-Encapsulation
-Abstraction
-Polymorphism
-Inheritance
-Dynamic Binding
-Message Passing
-Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+1. Introduction to Object-oriented programming 
+2. Class
+3. Objects
+4. Encapsulation
+5. Abstraction
+6. Polymorphism
+7. Inheritance
+8. Dynamic Binding
+9. Message Passing
+
+**1. Introduction to Object-oriented programming** – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
 ### Characteristics of an Object Oriented Programming language
-
-
-
-1. **Class:** The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.
+2. **Class:** The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.
 
 **For Example:** Consider the Class of Cars. There may be many cars with different names and brand but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range etc. So here, Car is the class and wheels, speed limits, mileage are their properties.
 
@@ -29,7 +27,7 @@ Data members are the data variables and member functions are the functions used 
 In the above example of class Car, the data member will be speed limit, mileage etc and member functions can apply brakes, increase speed etc.
 We can say that a Class in C++ is a blue-print representing a group of objects which shares some common properties and behaviours.
 
-2. **Object:** An Object is an identifiable entity with some characteristics and behaviour. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
+3. **Object:** An Object is an identifiable entity with some characteristics and behaviour. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
 
 ```cpp
 class person
@@ -52,7 +50,7 @@ When a program is executed the objects interact by sending messages to one anoth
 
 Each object contains data and code to manipulate the data. Objects can interact without having to know details of each other’s data or code, it is sufficient to know the type of message accepted and type of response returned by the objects.
 
-3. **Encapsulation:** In normal terms, Encapsulation is defined as wrapping up of data and information under a single unit. In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them.
+4. **Encapsulation:** In normal terms, Encapsulation is defined as wrapping up of data and information under a single unit. In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them.
 
 Consider a real-life example of encapsulation, in a company, there are different sections like the accounts section, finance section, sales section etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales. Now there may arise a situation when for some reason an official from the finance section needs all the data about sales in a particular month. In this case, he is not allowed to directly access the data of the sales section. He will first have to contact some other officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of the sales section and the employees that can manipulate them are wrapped under a single name “sales section”.
 
@@ -61,7 +59,7 @@ Consider a real-life example of encapsulation, in a company, there are different
 
 Encapsulation also leads to data abstraction or hiding. As using encapsulation also hides the data. In the above example, the data of any of the section like sales, finance or accounts are hidden from any other section.
 
-4. **Abstraction:** Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
+5. **Abstraction:** Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
 
 Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car but he does not know about how on pressing accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator, brakes etc in the car. This is what abstraction is.
 
@@ -75,14 +73,14 @@ An operation may exhibit different behaviours in different instances. The behavi
 
 C++ supports operator overloading and function overloading.
 
-5. **Operator Overloading:** The process of making an operator to exhibit different behaviours in different instances is known as operator overloading.
+6. **Operator Overloading:** The process of making an operator to exhibit different behaviours in different instances is known as operator overloading.
 Function Overloading: Function overloading is using a single function name to perform different types of tasks.
 Polymorphism is extensively used in implementing inheritance.
 Example: Suppose we have to write a function to add some integers, some times there are 2 integers, some times there are 3 integers. We can write the Addition Method with the same name having different parameters, the concerned method will be called according to parameters.
 
 
 
-6. **Inheritance:** The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
+7. **Inheritance:** The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
 
 Sub Class: The class that inherits properties from another class is called Sub class or Derived Class.
 Super Class:The class whose properties are inherited by sub class is called Base Class or Super class.
@@ -90,8 +88,6 @@ Reusability: Inheritance supports the concept of “reusability”, i.e. when we
 Example: Dog, Cat, Cow can be Derived Class of Animal Base Class.
 
 
-7. **Dynamic Binding:** In dynamic binding, the code to be executed in response to function call is decided at runtime. C++ has virtual functions to support this.
+8. **Dynamic Binding:** In dynamic binding, the code to be executed in response to function call is decided at runtime. C++ has virtual functions to support this.
 
-
-
-8. **Message Passing:** Objects communicate with one another by sending and receiving information to each other. A message for an object is a request for execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function and the information to be sent.
+9. **Message Passing:** Objects communicate with one another by sending and receiving information to each other. A message for an object is a request for execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function and the information to be sent.
